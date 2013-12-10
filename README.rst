@@ -4,9 +4,9 @@ tripping-wight
 Installation
 ------------
 
-$ virtualenv --no-site-packages .
-$ . bin/activate
-$ pip install -U -r requirements.txt
+        $ virtualenv --no-site-packages .
+        $ . bin/activate
+        $ pip install -U -r requirements.txt
 
 Usage
 -----
