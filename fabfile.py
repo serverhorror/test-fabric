@@ -24,7 +24,7 @@ def run_sudo_with_prompt():
 		puts(err)
 
 class RunScripts(tasks.Task):
-	"""Runs the scripts in the `./scripts` directory.
+	"""Runs the scripts in the `./scripts` directory on the remote.
 
 	This assumes that all the scripts have the executable bit set.
 	"""
@@ -45,7 +45,7 @@ class RunScripts(tasks.Task):
 		try:
 			self.upload_scripts()
 			for script in self.remote_scripts:
-				result = run(script)
+				result = sudo(script)
 				puts(result)
 		except AbortError as err:
 			puts(err)
