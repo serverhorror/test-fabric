@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if [[ $(type -P lsb_release) ]]; then
+	lsb_release --short --id --release | tr '\n' ' ' | tr -s ' '
+elif [ -r /etc/centos-release ]; then
+	cat /etc/centos-release
+elif [ -r /etc/redhat-release ]; then
+	cat /etc/redhat-release
+elif [ -r /etc/SuSE-version ]; then
+	cat SuSE-version
+elif [ -r /etc/debian_version ]; then
+	DEBIAN_VERSION=$(cat /etc/debian_version)
+	echo "Debian $DEBIAN_VERSION"
+else
+	UNAME=$(uname -a)
+	echo "<unknown> $UNAME"
+fi
