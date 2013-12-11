@@ -34,6 +34,14 @@ Disconnecting from localhost... done.
 Done.
 ```
 
+And here are the resulting files:
+
+```bash
+$ ls -l1 results/
+127.0.0.1.json
+localhost.json
+```
+
 Results
 -------
 
