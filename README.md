@@ -120,4 +120,17 @@ You can actually do anything you want, however you may want to keep to a few gui
 }
 ```
 
-Have fun!
+Currently Implemented Checks
+----------------------------
+
+* `detect-mysql` -- check wether a MySQL is running
+* `detect-nfs` -- check wether a NFSd is runnig
+* `detect-oracle` -- check wether an oracle seems to be running
+* `detect-rsyncd` -- check wether an rsync daemon is running
+* `detect-os` -- try to guess the OS in a repeatable manner
+* `hostname` -- try to get the fully qualified domain name from the system itself
+* `large-homes` -- find all homes (under /home) larger than 10 MiB (gives you the path names)
+* `lost+found` -- find all `lost+found` directories that are not empty (gives you a result number)
+
+
+Have fun! Patches welcome!
