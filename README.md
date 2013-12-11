@@ -1,6 +1,8 @@
 tripping-wight
 ==============
 
+* http://docs.fabfile.org/
+
 Installation
 ------------
 
@@ -16,7 +18,7 @@ Usage
 Each **executable** in the scripts directory will be copied to the target host and then executed under sudo.
 
 ```bash
-(fabstuff)$ fab --hide aborts,running --eagerly-disconnect --abort-on-prompts -H localhost run-scripts -p 'f00b$r' 
+(fabstuff)$ fab --hide aborts,running --eagerly-disconnect --abort-on-prompts -H localhost run-scripts
 [localhost] detect-mysql=0
 [localhost] detect-nfs=0
 [localhost] detect-oracle=0
