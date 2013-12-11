@@ -1,0 +1,9 @@
+# common python files
+.Python
+*.pyc
+*.swp
+
+# Virtualenv stuff
+bin/
+include/
+lib/
