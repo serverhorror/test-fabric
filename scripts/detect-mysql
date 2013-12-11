@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+pgrep -q -f mysql && echo 1 || echo 0

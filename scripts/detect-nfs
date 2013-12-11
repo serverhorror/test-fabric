@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+pgrep -q -f nfsd && echo 1 || echo 0

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+#find /home /Users -maxdepth 1 -mindepth 1 -type d -print0 | xargs -0 du -s -m | awk '$1>=10' | wc -l | tr -d ' \t'
+#find /home /Users -maxdepth 1 -mindepth 1 -type d -print0 | xargs -0 du -s -m | awk '$1>=10 {print $2}' | paste -d, -s -
+find /home /Users -maxdepth 1 -mindepth 1 -type d -print0 | xargs -0 du -s -m | awk '$1>=10 {print $2}' | paste -d, -s -
+
+

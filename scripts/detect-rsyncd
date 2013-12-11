@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+pgrep -q -f rsyncd && echo 1 || echo 0
