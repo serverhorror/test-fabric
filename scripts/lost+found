@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-find -x / -type d -name 'lost+found' -empty 2>/dev/null | wc -l | tr -d ' \t'
