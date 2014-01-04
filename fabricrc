@@ -1,0 +1,7 @@
+# user = root
+# password = supersecret
+eagerly_disconnect=True
+disable_known_hosts=True
+skip_bad_hosts=True
+forward_agent=True
+ssh_config_path="/dev/null"
